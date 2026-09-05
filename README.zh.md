@@ -57,6 +57,15 @@
 $ brew install --cask jaywcjlove/tap/vidwall-hub
 ```
 
+### 前端构建
+
+```shell
+npm ci
+npm run build
+```
+
+静态站点构建产物会输出到 `dist/` 目录。
+
 ### URL Scheme
 
 **Vidwall Hub** 支持通过 URL 激活工具，并根据 URL 中的视频文件路径参数自动导入视频。

@@ -1,0 +1,10 @@
+{
+  "name": "vidwall-hub",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Official frontend site for Vidwall Hub.",
+  "scripts": {
+    "build": "rm -rf dist && mkdir -p dist/assets && cp index.html styles.css main.js appcast.xml dist/ && cp assets/* dist/assets/",
+    "test": "echo \"No tests configured\""
+  }
+}

@@ -56,6 +56,15 @@ When trying to implement both dynamic wallpapers and dynamic lock screens throug
 $ brew install --cask jaywcjlove/tap/vidwall-hub
 ```
 
+### Frontend Build
+
+```shell
+npm ci
+npm run build
+```
+
+The static site build output is generated into `dist/`.
+
 ### URL Scheme
 
 **Vidwall Hub** allows activating the tool via URL and automatically importing a video based on the file path parameter in the URL.

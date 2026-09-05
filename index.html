@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vidwall Hub</title>
+    <meta
+      name="description"
+      content="Vidwall Hub imports MP4 and MOV videos into macOS wallpaper resources so you can finish lock screen setup in System Settings."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=DM+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="orb orb-left"></div>
+    <div class="orb orb-right"></div>
+    <header class="hero">
+      <nav class="topbar">
+        <a class="brand" href="#top">
+          <img src="assets/logo.png" alt="Vidwall Hub logo" />
+          <span>Vidwall Hub</span>
+        </a>
+        <div class="links">
+          <a href="https://github.com/gothamgodzilla/vidwall-hub/releases/latest/" target="_blank" rel="noreferrer">Download</a>
+          <a href="https://github.com/gothamgodzilla/vidwall-hub/issues/new?template=bug_report.yml" target="_blank" rel="noreferrer">Support</a>
+        </div>
+      </nav>
+      <section class="headline" id="top">
+        <p class="badge">macOS Tahoe 26+</p>
+        <h1>Build dynamic lock-screen sources from your own videos.</h1>
+        <p>
+          Vidwall Hub imports local MP4 and MOV files into Apple's wallpaper resource folders,
+          then refreshes wallpaper services so your clips are available in System Settings.
+        </p>
+        <div class="cta-row">
+          <a class="btn primary" href="https://github.com/gothamgodzilla/vidwall-hub/releases/latest/" target="_blank" rel="noreferrer">Get Latest Release</a>
+          <a class="btn ghost" href="https://github.com/jaywcjlove/vidwall" target="_blank" rel="noreferrer">About Vidwall</a>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="panel preview">
+        <img src="assets/vidwall-hub-screenshots-1.png" alt="Vidwall Hub application screenshot" />
+      </section>
+
+      <section class="panel">
+        <h2>How it works</h2>
+        <ol class="steps">
+          <li>Load wallpaper manifest entries from your user library.</li>
+          <li>Create the Vidwall Videos category when missing.</li>
+          <li>Write new asset entries and generated thumbnails.</li>
+          <li>Copy or remux videos into system wallpaper resources.</li>
+          <li>Restart wallpaper services so new assets appear instantly.</li>
+        </ol>
+      </section>
+
+      <section class="panel split">
+        <article>
+          <h3>URL automation</h3>
+          <p>Trigger imports directly from a file path:</p>
+          <pre><code>vidwallhub://open?file=/file/to/path/video.mp4</code></pre>
+        </article>
+        <article>
+          <h3>Brew install</h3>
+          <pre><code>brew install --cask jaywcjlove/tap/vidwall-hub</code></pre>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        <a href="README.md">Documentation</a>
+        <a href="CHANGELOG.md">Changelog</a>
+        <a href="https://github.com/gothamgodzilla/vidwall-hub" target="_blank" rel="noreferrer">GitHub</a>
+      </p>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
